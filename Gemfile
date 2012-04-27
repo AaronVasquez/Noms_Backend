@@ -10,6 +10,7 @@ gem 'thin'
 gem 'haml'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'foreman'
 
 # Gems used only for assets and not required
 # in production environments by default.
