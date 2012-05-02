@@ -12,7 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :comment %><br />
+    <%= f.label :image, 'Picture' %><br />
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :comment, 'Nomment' %><br />
     <%= f.text_field :comment %>
   </div>
   <div class="actions">

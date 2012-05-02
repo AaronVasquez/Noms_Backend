@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Comment</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +11,11 @@
 <% @photos.each do |photo| %>
   <tr>
     <td><%= photo.comment %></td>
+  </tr>
+  <tr>
+    <td><%= image_tag(photo.image.url) %></td>
+  </tr>
+  <tr>
     <td><%= link_to 'Show', photo %></td>
     <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
     <td><%= link_to 'Destroy', photo, confirm: 'Are you sure?', method: :delete %></td>
